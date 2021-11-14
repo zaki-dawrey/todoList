@@ -1,0 +1,30 @@
+form input{
+    width: 200px;
+    height: 52px;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.select{
+    width: 100px;
+}
+
+.trash-btn, .complete-btn{
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-item{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.todo-input{
+    font-size: 20px;
+    padding: 10px;
+}
