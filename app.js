@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', getTodos);
 
 function addTodo(event){
     //Prevent form from submitting
-    event.preventDefault();
+    if(todoInput.value==''){
+        alert('Plzz enter task...');
+    } else{
     //Todo Div
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
@@ -36,6 +38,7 @@ function addTodo(event){
     todoDiv.appendChild(trashButton);
     //append to list
     todoList.appendChild(todoDiv);
+    }
     //Clear todo input value
     todoInput.value = "";
 }
