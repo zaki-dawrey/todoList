@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', getTodos);
 function addTodo(event){
     //Prevent form from submitting
     if(todoInput.value==''){
-        alert('Plzz enter task...');
+        alert("Task deleted as it was empty");
     } else{
     //Todo Div
     const todoDiv = document.createElement("div");
